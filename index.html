@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Language Quiz</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+  </head>
+
+  <body>
+    <section class="hero is-small notification is-danger has-text-centered">
+      <div class="hero-body">
+        <p class="title">Language Quiz</p>
+        <p class="subtitle">
+          Can you guess the top 12 languages spoken in the United States?
+        </p>
+      </div>
+    </section>
+    <div class="container">
+      <section class="section">
+        <h1 class="title">Make some guesses!</h1>
+        <h2 class="subtitle">
+          Type your guesses below! If you get a match, it should show up
+          instantly.
+        </h2>
+        <input
+          id="guess"
+          class="input is-primary is-large"
+          type="text"
+          name="language"
+          placeholder="Guess a language!"
+        />
+      </section>
+      <section>
+        <div class="tile is-ancestor">
+          <div class="tile is-parent is-4">
+            <div class="tile is-child notification is-danger hidden" id="English">
+              <p class="title">English</p>
+              <p class="subtitle">Hello World</p>
+              <img src="https://cdn.britannica.com/79/4479-050-6EF87027/flag-Stars-and-Stripes-May-1-1795.jpg"alt="flag">
+            </div>
+          </div>
+          <div class="tile is-parent is-4">
+            <div class="tile is-child notification is-danger hidden" id="Spanish">
+              <p class="title">Spanish</p>
+              <p class="subtitle">Hola Mundo</p>
+              <img src="https://cdn.britannica.com/73/2573-004-29818847/Flag-Mexico.jpg" alt="flag">
+            </div>
+          </div>
+          <div class="tile is-parent is-4">
+            <div class="tile is-child notification is-danger hidden" id="Chinese">
+              <p class="title">Chinese</p>
+              <p class="subtitle">你好世界</p>
+              <img src="https://cdn.britannica.com/90/7490-004-BAD4AA72/Flag-China.jpg" alt="flag">
+            </div>
+          </div>
+        </div>
+        <div class="tile is-ancestor">
+          <div class="tile is-parent">
+            <div class="tile is-child notification is-danger hidden" id="Tagalog">
+              <p class="title">Tagalog</p>
+              <p class="subtitle">Kamusta sa Mundo</p>
+              <img src="https://cdn.britannica.com/73/3473-004-6E573BFA/Flag-Philippines.jpg" alt="flag">
+            </div>
+          </div>
+          <div class="tile is-parent is-4">
+            <div class="tile is-child notification is-danger hidden" id="Vietnamese">
+              <p class="title">Vietnamese</p>
+              <p class="subtitle">Chào thế giới</p>
+              <img src="https://cdn.britannica.com/41/4041-004-D051B135/Flag-Vietnam.jpg" alt="flag">
+            </div>
+          </div>
+          <div class="tile is-parent is-4">
+            <div class="tile is-child notification is-danger hidden" id="Arabic">
+              <p class="title">Arabic</p>
+              <p class="subtitle">مرحبا بالعالم</p>
+              <img src="https://cdn.britannica.com/50/4550-004-7B368E09/Flag-Syria.jpg" alt="flag">
+            </div>
+          </div>
+        </div>
+        <div class="tile is-ancestor">
+          <div class="tile is-parent is-4">
+            <div class="tile is-child notification is-danger hidden" id="French">
+              <p class="title">French</p>
+              <p class="subtitle">Bonjour le monde</p>
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Flag_of_France.svg/2560px-Flag_of_France.svg.png" alt="flag">
+            </div>
+          </div>
+          <div class="tile is-parent is-4">
+            <div class="tile is-child notification is-danger hidden" id="Korean">
+              <p class="title">Korean</p>
+              <p class="subtitle">안녕하세요 세계</p>
+              <img src="https://asiasociety.org/sites/default/files/styles/1200w/public/K/korean-flag.jpg" src="flag">
+            </div>
+          </div>
+          <div class="tile is-parent is-4">
+            <div class="tile is-child notification is-danger hidden" id="Russian">
+              <p class="title">Russian</p>
+              <p class="subtitle">Привет мир</p>
+              <img src="https://www.youngpioneertours.com/wp-content/uploads/2020/03/russian-flag-russian-flag-russia-flag-of-russia.jpg" alt="flag">
+            </div>
+          </div>
+        </div>
+        <div class="tile is-parent is-4">
+            <div class="tile is-child notification is-danger hidden" id="German">
+              <p class="title">German</p>
+              <p class="subtitle">Hallo welt</p>
+              <img src="https://starspangledflags.com/wp-content/uploads/germany-flag.jpg" alt="flag">
+            </div>
+          </div>
+     <div class="tile is-parent is-4">
+            <div class="tile is-child notification is-danger hidden" id="HaitianCreole">
+              <p class="title">Haitian Creole</p>
+              <p class="subtitle"> Bonjou monn</p>
+              <img src="https://restavekfreedom.org/wp-content/uploads/2019/04/haiti-flag-square-1280x720.jpg" alt="flag">
+            </div>
+          </div>
+        <div class="tile is-parent is-4">
+            <div class="tile is-child notification is-danger hidden" id="Hindi">
+              <p class="title">Hindi</p>
+              <p class="subtitle"> नमस्ते दुनिया</p>
+              <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/1200px-Flag_of_India.svg.png" alt="flag">
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer class="footer notification is-danger mt-5 mb-0">
+      <div class="content has-text-centered">
+        <p class="subtitle">Thanks for playing!</p>
+        <p>
+          Source:
+          <a
+            href="https://www.accreditedlanguage.com/languages/the-10-most-popular-languages-in-the-us/"
+            >Accredited Language Services</a
+          >, translations of "Hello World" prodived by Google Translate
+        </p>
+      </div>
+    </footer>
+    <script src="script.js" type="text/javascript" defer></script>
+  </body>
+</html>
